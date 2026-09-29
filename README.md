@@ -167,6 +167,7 @@ Response captured in the supplied screenshot:
 Redeploy after changing environment variables. Render provides the server port automatically.
 
 ## Output Screenshots
+## Frontend:
 
 ### Dashboard
 
@@ -195,5 +196,8 @@ Successful cancellation using `cancelOrder`.
 
 (<img width="862" height="458" alt="json-rpc" src="https://github.com/user-attachments/assets/d4255b3b-912e-4cef-bf6a-b4558c4a689e" />
 )
+### Backend :
+
+<img width="959" height="311" alt="image" src="https://github.com/user-attachments/assets/60c1dec5-f831-4fd2-b078-9a468ecd3a05" />
 
 
