@@ -1,4 +1,4 @@
-# Real-Time Order Tracking & Live Support System
+# Real-Time Order Tracking & Live Support System by Ahsan Ali (SP24-BSE-004)
 
 **CSC337 — Lab Assignment 04**
 
@@ -172,43 +172,28 @@ Redeploy after changing environment variables. Render provides the server port a
 
 Catalog loaded with WebSocket and SSE connected.
 
-![Dashboard with connected WebSocket and SSE](screenshots/dashboard.png)
+(<img width="955" height="455" alt="dashboard" src="https://github.com/user-attachments/assets/68cf7320-f459-4c2c-b149-48a83ec0aff9" />
+)
 
 ### Orders — REST API
 
 Orders with shipping, delivery, and cancellation actions.
 
-![Order list and status actions](screenshots/orders.png)
+(<img width="794" height="439" alt="orders" src="https://github.com/user-attachments/assets/1ec0f49f-87f9-42a7-aabd-33d6c704b57c" />
+)
 
 ### Live Support and SSE
 
 Support chat alongside live status and cancellation alerts.
 
-![Support chat and live SSE alerts](screenshots/chat-sse.png)
+(<img width="800" height="435" alt="chat-sse" src="https://github.com/user-attachments/assets/50f5cae3-4912-4bb7-a853-8bc4f19bc12d" />
+)
 
 ### JSON-RPC Response
 
 Successful cancellation using `cancelOrder`.
 
-![JSON-RPC cancellation response](screenshots/json-rpc.png)
+(<img width="862" height="458" alt="json-rpc" src="https://github.com/user-attachments/assets/d4255b3b-912e-4cef-bf6a-b4558c4a689e" />
+)
 
-## Quick Test
 
-1. Create an order and update its status.
-2. Open two browser windows and join the same order as Customer and Support.
-3. Exchange messages and observe live alerts.
-4. Cancel another order using **Cancel via RPC** and inspect the result.
-
-After installing both folders' dependencies, run checks from the project root:
-
-```bash
-node tests/smoke.mjs
-npm run build --prefix frontend
-```
-
-## Notes
-
-- In-memory data resets when the backend restarts.
-- A sleeping free backend may respond slowly to the first request.
-- This classroom demo has no production authentication; do not use real customer data.
-- Do not upload `node_modules` or real `.env` files.
