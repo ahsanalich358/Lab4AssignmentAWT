@@ -1,0 +1,33 @@
+:root { font-family: Inter, system-ui, sans-serif; background: #f4f7fb; color: #172033; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, select { font: inherit; }
+.page { max-width: 1100px; margin: 0 auto; padding: 32px 18px 60px; }
+header { margin-bottom: 24px; }
+header h1 { margin-bottom: 6px; }
+header p { color: #667085; margin-top: 0; }
+.card { background: white; border: 1px solid #e4e7ec; border-radius: 14px; padding: 20px; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(16,24,40,.06); }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.orders { display: grid; gap: 12px; }
+.order { display: flex; justify-content: space-between; gap: 12px; padding: 14px; border: 1px solid #eaecf0; border-radius: 10px; }
+.order p { margin: 5px 0 10px; color: #667085; }
+.badge { display: inline-block; padding: 4px 9px; border-radius: 999px; background: #eef4ff; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-content: start; }
+button { border: 0; background: #155eef; color: white; padding: 9px 12px; border-radius: 8px; cursor: pointer; }
+button.danger { background: #d92d20; }
+input, select { width: 100%; padding: 10px; border: 1px solid #d0d5dd; border-radius: 8px; margin: 6px 0 12px; }
+.chatbox { height: 230px; overflow-y: auto; border: 1px solid #eaecf0; border-radius: 8px; padding: 10px; margin: 14px 0; background: #fafafa; }
+.chatbox div { margin-bottom: 8px; }
+.sendrow { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.sendrow input { margin: 0; }
+.alerts { display: grid; gap: 10px; max-height: 410px; overflow-y: auto; }
+.alert { border-left: 4px solid #155eef; background: #f8f9fc; padding: 10px; border-radius: 6px; }
+.alert small { color: #667085; }
+pre { white-space: pre-wrap; background: #101828; color: #d1fadf; padding: 14px; border-radius: 8px; overflow-x: auto; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } .order { flex-direction: column; } }
+
+button:disabled { opacity: .45; cursor: not-allowed; }
+.error { padding: 14px; margin-bottom: 20px; border-radius: 8px; background: #fee4e2; color: #912018; }
+.connections { color: #155eef; }
+.orders { margin-top: 14px; }
+.chatbox { overflow-wrap: anywhere; }
